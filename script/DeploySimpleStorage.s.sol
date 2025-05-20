@@ -3,8 +3,8 @@
 pragma solidity ^0.8.24;
 
 import {Script} from "forge-std/Script.sol";
-import { console } from "forge-std/console.sol";
-import { SimpleStorage } from "../src/SimpleStorage.sol";
+import {console} from "forge-std/console.sol";
+import {SimpleStorage} from "../src/SimpleStorage.sol";
 
 contract DeploySimpleStorage is Script {
     function run() external returns (SimpleStorage) {

@@ -12,10 +12,10 @@ contract SimpleStorage {
     }
 
     // Person public dev = Person(1, "Emmanuel");
- 
+
     Person[] public allDevs;
 
-    mapping(string => uint256)  public nameToFavoriteNumber;
+    mapping(string => uint256) public nameToFavoriteNumber;
 
     function store(uint256 _favoriteNumber) public virtual {
         myFavoriteNumber = _favoriteNumber;
@@ -29,6 +29,4 @@ contract SimpleStorage {
     function getFavoriteNumber() public view returns (uint256) {
         return myFavoriteNumber;
     }
-
-
 }
